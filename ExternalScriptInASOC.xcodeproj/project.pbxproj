@@ -12,6 +12,9 @@
 		B94F3B1A1A615AFA0098B8D7 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = B94F3B191A615AFA0098B8D7 /* AppDelegate.applescript */; };
 		B94F3B1C1A615AFA0098B8D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94F3B1B1A615AFA0098B8D7 /* Images.xcassets */; };
 		B94F3B1F1A615AFA0098B8D7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94F3B1D1A615AFA0098B8D7 /* MainMenu.xib */; };
+		B94F3B271A615C570098B8D7 /* Controller.applescript in Sources */ = {isa = PBXBuildFile; fileRef = B94F3B261A615C570098B8D7 /* Controller.applescript */; };
+		B94F3B2C1A6169E30098B8D7 /* ExternalAS.scpt in Resources */ = {isa = PBXBuildFile; fileRef = B94F3B2B1A6169E30098B8D7 /* ExternalAS.scpt */; };
+		B94F3B301A616EBB0098B8D7 /* subController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F3B2F1A616EBB0098B8D7 /* subController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +24,11 @@
 		B94F3B171A615AFA0098B8D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B94F3B191A615AFA0098B8D7 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
 		B94F3B1B1A615AFA0098B8D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B94F3B1E1A615AFA0098B8D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B94F3B251A615B650098B8D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B94F3B261A615C570098B8D7 /* Controller.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = Controller.applescript; sourceTree = "<group>"; };
+		B94F3B2B1A6169E30098B8D7 /* ExternalAS.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ExternalAS.scpt; sourceTree = "<group>"; };
+		B94F3B2E1A616EBB0098B8D7 /* subController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subController.h; sourceTree = "<group>"; };
+		B94F3B2F1A616EBB0098B8D7 /* subController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +72,12 @@
 			isa = PBXGroup;
 			children = (
 				B94F3B191A615AFA0098B8D7 /* AppDelegate.applescript */,
+				B94F3B261A615C570098B8D7 /* Controller.applescript */,
+				B94F3B2E1A616EBB0098B8D7 /* subController.h */,
+				B94F3B2F1A616EBB0098B8D7 /* subController.m */,
 				B94F3B1B1A615AFA0098B8D7 /* Images.xcassets */,
 				B94F3B1D1A615AFA0098B8D7 /* MainMenu.xib */,
+				B94F3B2D1A6169F40098B8D7 /* Resources */,
 				B94F3B151A615AF90098B8D7 /* Supporting Files */,
 			);
 			path = ExternalScriptInASOC;
@@ -79,6 +90,14 @@
 				B94F3B171A615AFA0098B8D7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B94F3B2D1A6169F40098B8D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B94F3B2B1A6169E30098B8D7 /* ExternalAS.scpt */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +140,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = B94F3B061A615AF90098B8D7;
 			productRefGroup = B94F3B101A615AF90098B8D7 /* Products */;
@@ -140,6 +158,7 @@
 			files = (
 				B94F3B1C1A615AFA0098B8D7 /* Images.xcassets in Resources */,
 				B94F3B1F1A615AFA0098B8D7 /* MainMenu.xib in Resources */,
+				B94F3B2C1A6169E30098B8D7 /* ExternalAS.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94F3B301A616EBB0098B8D7 /* subController.m in Sources */,
+				B94F3B271A615C570098B8D7 /* Controller.applescript in Sources */,
 				B94F3B1A1A615AFA0098B8D7 /* AppDelegate.applescript in Sources */,
 				B94F3B181A615AFA0098B8D7 /* main.m in Sources */,
 			);
@@ -161,7 +182,7 @@
 		B94F3B1D1A615AFA0098B8D7 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B94F3B1E1A615AFA0098B8D7 /* Base */,
+				B94F3B251A615B650098B8D7 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -249,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ExternalScriptInASOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -260,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ExternalScriptInASOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -286,6 +309,7 @@
 				B94F3B241A615AFA0098B8D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
